@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:#0A111E;color:#E8EEF7}
+:focus-visible{outline:2px solid #00F2FE;outline-offset:2px}
+.wave{animation:drift 14s linear infinite}
+@keyframes drift{to{transform:translateX(-400px)}}
+@media (prefers-reduced-motion:reduce){.wave{animation:none}html{scroll-behavior:auto}}

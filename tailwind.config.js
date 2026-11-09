@@ -1,0 +1,1 @@
+module.exports={content:["./app/**/*.js","./components/**/*.js"],theme:{extend:{colors:{navy:"#0A111E",deck:"#111B2E",steel:"#1C2A42",ice:"#00F2FE",sky:"#4FACFE"},fontFamily:{head:["var(--f-head)"],body:["var(--f-body)"]}}}}
