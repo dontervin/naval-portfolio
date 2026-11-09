@@ -1,1 +1,1 @@
-module.exports={content:["./app/**/*.js","./components/**/*.js"],theme:{extend:{colors:{navy:"#0A111E",deck:"#111B2E",steel:"#1C2A42",ice:"#00F2FE",sky:"#4FACFE"},fontFamily:{head:["var(--f-head)"],body:["var(--f-body)"]}}}}
+module.exports={content:["./app/**/*.js","./components/**/*.js"],theme:{extend:{colors:{navy:"#0B1726",ocean:"#122538",slate2:"#34495E",steel:"#8494A4",teal:"#16A69A",tealdk:"#0E7C73",cyan:"#66D9CF",mist:"#F4F7FA"},fontFamily:{head:["var(--f-head)"],body:["var(--f-body)"],mono:["var(--f-mono)"]}}}}
