@@ -1,7 +1,7 @@
 @tailwind base;@tailwind components;@tailwind utilities;
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{background:#0A111E;color:#E8EEF7}
-:focus-visible{outline:2px solid #00F2FE;outline-offset:2px}
-.wave{animation:drift 14s linear infinite}
-@keyframes drift{to{transform:translateX(-400px)}}
-@media (prefers-reduced-motion:reduce){.wave{animation:none}html{scroll-behavior:auto}}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:#fff;color:#0B1726}
+:focus-visible{outline:2px solid #16A69A;outline-offset:2px}
+.rise{animation:rise .7s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}}
