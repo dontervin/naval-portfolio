@@ -9,6 +9,7 @@ export const metadata={metadataBase:new URL(url),title:{default:"Don Tervin Lind
   openGraph:{title:"Don Tervin Lindo | Naval Architect",description:desc,url,type:"website"}};
 const ld={"@context":"https://schema.org","@type":"Person",name:"Don Tervin Lindo",jobTitle:"Naval Architect",url,sameAs:["https://linkedin.com/in/dontervinlindo"],alumniOf:"Cochin University of Science and Technology"};
 export default function RootLayout({children}){
-  return <html lang="en" className={`${head.variable} ${body.variable} ${mono.variable}`}><body className="font-body antialiased">
+  return <html lang="en" suppressHydrationWarning className={`${head.variable} ${body.variable} ${mono.variable}`}><body className="font-body antialiased">
+    <script dangerouslySetInnerHTML={{__html:"document.documentElement.classList.add('js')"}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(ld)}}/>{children}</body></html>;
 }
