@@ -18,7 +18,7 @@ export default function Calculators(){
         {err&&<p role="alert" className="text-red-700 text-sm">{err}</p>}
       </form>
       <div className="space-y-4" aria-live="polite">
-        {res&&<table className="w-full text-sm border border-steel/40"><tbody>{res.map(([a,b,u])=><tr key={a} className="border-t border-steel/30 first:border-0"><td className="p-3 text-slate2">{a}</td><td className="p-3 text-right font-mono font-medium">{b} {u}</td></tr>)}</tbody></table>}
+        {res&&<table key={res[0][1]} className="rise w-full text-sm border border-steel/40"><tbody>{res.map(([a,b,u])=><tr key={a} className="border-t border-steel/30 first:border-0"><td className="p-3 text-slate2">{a}</td><td className="p-3 text-right font-mono font-medium">{b} {u}</td></tr>)}</tbody></table>}
         <div className="text-sm text-slate2 space-y-2"><p><b className="text-navy">Method.</b> {c.how}</p><p><b className="text-navy">Assumptions.</b> {c.assume}</p><p><b className="text-navy">Limitations.</b> {c.limits}</p></div>
       </div></div>
     <p className="mt-6 text-xs text-slate2">Preliminary calculators for understanding and early estimates. They do not replace detailed NAPA modelling, statutory verification or class approval.</p>
